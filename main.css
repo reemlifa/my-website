@@ -1,51 +1,116 @@
 button {
     cursor: pointer;
+
 }
 
 .nav {
-padding-bottom: 50px;
-text-align: right;
+    text-align: right;
 }
 
 .nav a {
     display: inline-block;
     margin-left: 10px;
-  }
+}
 
+.nav a img {
+    width: 50px; /* Set a smaller width for the images */
+    height: 50px; /* Set a smaller height for the images */
+    padding: 5px; /* Add padding */
+    margin: 5px; /* Add margin */
+    border-radius: 0;
+}
 
 
 header {
     display: flex;
-    align-items: center; /* Align items vertically in the center */
-    justify-content: space-between; /* Space out the header text and image */
-    margin-left: 25%; /* Adjust as needed */
+    margin: 0 auto;
+    max-width: 80%; /* Limit max width for large screens */
+    width: 100%;
+    padding-top: 20px;
 }
 
 img {
-    margin-left: 40px; /* Add space between the header text and the image */
-    border-radius: 70%;
+    border-radius: 90%;
     width: 100px;
     height: 100px;
+    margin-right: 20px;
 }
 
-h2 {
-    margin-left: 25%;
-}
-
-.workingon, .previously{
-    margin-left: 25%;
-}
-
-h1{
-    margin-left: 25%;
+h2, .previously, .press, .workingon {
+    max-width: 80%; /* Center content for desktop */
+    margin: 20px auto;
 }
 
 ul {
-    display: block;
     list-style-type: disc;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
     padding-left: 40px;
-  }
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Adjust navigation */
+    .nav {
+        text-align: center; /* Center buttons on mobile */
+    }
+
+    .nav a {
+        margin: 10px;
+    }
+
+    /* Stack header items */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    img {
+        margin-left: 0; /* Reset left margin on mobile */
+        margin-top: 15px;
+    }
+
+    /* Adjust margin and padding for sections */
+    h2, .previously, .press, .workingon {
+        max-width: 90%; /* Allow more width on mobile */
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    ul {
+        padding-left: 20px; /* Reduce padding for lists on mobile */
+    }
+}
+
+@media (max-width: 600px) {
+
+
+    header {
+        display: flex;
+        width: 100%;
+        padding-top: 20px;
+    }
+    
+    img {
+        border-radius: 90%;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+
+h1, .workingon, .press, .previously {
+   
+     text-align: left;
+
+ }
+
+.previously p {
+    padding-left: 10px;
+}
+    
+}
+
