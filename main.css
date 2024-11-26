@@ -1,128 +1,53 @@
-button {
-    cursor: pointer;
-}
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+  }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.nav {
-    text-align: right;
-}
-
-.nav a {
-    display: inline-block;
-    margin-left: 10px;
-}
-
-.nav a img {
-
-    width: 40px; /* Set a smaller width for the images */
-    height: 40px; /* Set a smaller height for the images */
-    padding: 5px; /* Add padding */
-    margin: 5px; /* Add margin */
-    border-radius: 0;
-  
-}
-
-
-header {
+nav {
+    color: black;
+    background-color: white;
+    padding: 10px 0;
+    margin-left: 40px;
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    padding: 150px 0;
     display: flex;
-    margin: 0 auto;
-    max-width: 80%;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     width: 100%;
-    padding-top: 20px;
-}
- img {
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
-    object-fit: cover;
-    transform: scale(1.2); 
 }
 
-header h1 {
-    margin: 2;
+nav ul li {
+    width: 100%;
     text-align: center;
+    margin-bottom: 10px;
 }
 
-
-h2, .previously, .press, .workingon {
-    max-width: 80%; 
-    margin: 20px auto;
-   
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    width: 100%;
 }
 
-ul {
-    list-style-type: disc;
-    padding-left: 40px;
-}
-
-p {
-    line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-    /* Adjust navigation */
-    .nav {
-        text-align: center; 
-    }
-
-    .nav a {
-        margin: 10px;
-    }
-
-    
-    header {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
-
-    img {
-        margin-left: 0; 
-        margin-top: 15px;
-    }
-
-   
-    h2, .previously, .press, .workingon {
-        max-width: 90%; 
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-
-    ul {
-        padding-left: 20px; 
-    }
-}
-
-@media (max-width: 600px) {
-
-
-    header {
-        display: flex;
-        width: 100%;
-        padding-top: 20px;
-    }
-    
-    img {
-        border-radius: 90%;
-        width: 100px;
-        height: 100px;
-        margin: auto;
-    }
-
-h1, .workingon, .press, .previously {
-   
-     text-align: left;
-
- }
-
-.previously p {
-    padding-left: 10px;
-}
-    
+section {
+    margin-left: 220px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
