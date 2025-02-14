@@ -1,45 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reem Khalifa</title>
-    <link href="main.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="index.js"></script>
-</head>
+<html>
+  <body>
+    <div id="app"></div>
+    <script type="text/javascript">
+    
+    // selects div element with app id
+    const app = document.getElementById('app'); // returns element by id, in this case app
+    
+    // Create a new H1 element
+    const header = document.createElement('h1');
+    
+    // Create a new text node for the H1 element
+    const text = 'Develop. Preview. Ship.';
+    const headerContent = document.createTextNode(text);
+    
+    // Append the text to the H1 element
+      header.appendChild(headerContent);
+ 
+    // Place the H1 element inside the div
+      app.appendChild(header);
 
-<body>
-  <nav>
-    <ul>
-      <li><a href="#section1">Home</a></li>
-      <li><a href="#section2">About</a></li>
-      <li><a href="#section3">Projects</a></li>
-      <li><a href="#section4">Contact</a></li>
-    </ul>
-  </nav>  
-
-  <section id="section1">
-    <h1>Home</h1>
-    <p>Hi! I'm Reem Khalifa, a 17 year old activist based in NYC.</p>
-  </section>
-
-  <section id="section2">
-    <h1>About</h1>
-    <p>I'm a 17 year old activist based in NYC.</p>
-  </section>
-  
-  <section id="section3">
-    <h1>Projects</h1>
-    <p>Working on:</p>
-    <li><p><a href="https://luna.hackclub.com/">Will update soon!</a></p></li>
-  </section>
-
-  <section id="section4">
-    <h1>Contact</h1>
-    <p>Feel free to reach out to me at reemkhalifa110@gmail.com</p>
-  </section>
-
-  
+</script>
+  </body>
+</html>
