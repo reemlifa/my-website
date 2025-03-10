@@ -1,0 +1,48 @@
+html {
+    background-color: #f2efeb;
+    color: #100f0d;
+    font-family: 'adobe-garamond-pro', arial;
+}
+
+body {
+    margin: 8.125vw 16vw 1vw;
+}
+
+h1{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+p{
+    font-size: 1em;
+}
+
+img {
+    height: 3.4em;
+    width: 3.4em;
+}
+nav a {
+    text-decoration: none;
+    padding-right: 0.5vw;
+}
+a {
+    text-decoration: wavy underline;
+    text-decoration-thickness: from-font;
+}
+
+a:visited { text-decoration: none; color:#100f0d}
+a:hover { text-shadow: 2px 2px 5px #a3a3a3; }
+img:hover {filter: drop-shadow(2px 2px 5px #a3a3a3); }
+
+@media (max-width: 600px) {
+    img {
+      width: 2.8em; /* Adjust the size to fit */
+      height: 2.8em;
+    }
+  }
+  
