@@ -31,9 +31,11 @@ nav a {
     padding-right: 0.5vw;
 }
 a {
-    text-decoration: wavy underline;
-    text-decoration-thickness: from-font;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 0.5px;
 }
+
 
 a:visited { text-decoration: none; color:#100f0d}
 a:hover { text-shadow: 2px 2px 5px #a3a3a3; }
