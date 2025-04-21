@@ -4,8 +4,15 @@ html {
     font-family: 'adobe-garamond-pro', arial;
 }
 
+
+.projects a {
+    text-decoration: none;
+}
+
+
+
 body {
-    margin: 8.125vw 16vw 1vw;
+    margin: 8.125vw 17vw 1vw;
 }
 
 h1{
@@ -34,6 +41,7 @@ a {
     text-decoration: underline;
     text-decoration-style: wavy;
     text-decoration-thickness: 0.5px;
+    color: inherit;
 }
 
 
